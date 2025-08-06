@@ -1,8 +1,20 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 
 // Extend Window type to include webkitSpeechRecognition
@@ -128,6 +140,10 @@ export default function Home() {
               Built with 💙 using Web Speech API (Text ↔ Speech)
             </p>
           </div>
+          <p className="text-center text-xs text-gray-400 mt-2">
+            Created by{" "}
+            <span className="font-semibold text-gray-600">Sagar Koshti</span>
+          </p>
         </CardContent>
       </Card>
     </main>
